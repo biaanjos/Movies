@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    if user
+        h3 Welcome back #{user.name}!
+    h1 MovieStore
+    each movie in movies 
+        label Name:
+        a(href="/movie/" + movie._id) #{movie.name}
+        p Description: #{movie.description}
+        p Year: #{movie.year}
+        p Rating: #{movie.rating}
+        p Genres:
+        ul
+        each genre in movie.genres
+            li #{genre}
+            br
+
+        br
+        br

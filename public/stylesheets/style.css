@@ -1,0 +1,65 @@
+body {
+    padding: 50px;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: lightcyan;
+}
+  
+a {
+    color: rgb(76, 184, 220);
+}
+
+a:visited {
+    color: purple;
+}
+
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=button], input[type=submit] {
+    background-color: rgb(76, 184, 220);
+    border-radius: 5px;
+    border: 2px solid rgb(76, 184, 220);
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+label {
+    color: #5D8AA8;
+}
+
+h1, h3, p, h5{
+    color: #5D8AA8
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+    color: #5D8AA8
+}
+  
+li a {
+    display: block;
+    color: rgb(76, 184, 220);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #5D8AA8
+}
+
+  

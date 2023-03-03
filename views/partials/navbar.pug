@@ -1,0 +1,30 @@
+nav
+    ul
+        if user
+            li.nav-item 
+                a(href="/") Home
+            li.nav-item 
+                a(href="/movie/add") Add Movie
+            li.nav-item 
+                a(href="/users/logout") Logout
+        else
+            li.nav-item 
+                a(href="/") Home
+            li.nav-item 
+                a(href="/users/register") Register 
+            li.nav-item 
+                a(href="/users/login") Login
+
+
+//- nav
+//-     a(href="/") Home
+//-     br
+//-     if user
+//-         a(href="/movie/add") Add Movie
+//-         br
+//-         a(href="/users/logout") Logout 
+//-     else
+//-         a(href="/users/register") Register 
+//-         br
+//-         a(href="/users/login") Login 
+//-     br

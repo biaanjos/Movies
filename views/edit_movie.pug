@@ -1,0 +1,41 @@
+extends layout 
+
+block content 
+    h1= movie.name 
+    form(method="POST" action="/movie/edit/" + movie._id)
+        #form-group 
+            label Name:
+            br
+            input.form-control(name="name" type="text" value=movie.name)
+
+        #form-group 
+            label Description:
+            br
+            input.form-control(name="description" type="text" value=movie.description)
+
+        #form-group 
+            label Year:
+            br
+            input.form-control(name="year" type="number" value=movie.year)
+
+        #form-group 
+            label Genres:
+            //- Loop through genres to assign values to checkboxes
+            for genre in genres
+                if movie.genres.includes(genre)
+                    br
+                    input.form-control(name="genres" type="checkbox" value=genre checked=true)
+                else
+                    br
+                    input.form-control(name="genres" type="checkbox" value=genre)
+                
+                label= genre
+
+        #form-group 
+            label Rating:
+            br
+            input.form-control(name="rating" type="number" value=movie.rating)
+
+        br
+        input.btn.btn-primary(type="submit" value="Submit")
+
